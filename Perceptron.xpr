@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA/Perceptron.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="D:/faculta_an3/ssc/Perceptron/Perceptron.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f9e6746b5d034730bd2f1f0a5db922dc"/>
@@ -140,6 +140,13 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/FPU_multiplier.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/FPU_adder.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
