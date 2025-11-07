@@ -22,6 +22,8 @@ architecture Behavioral of Main is
     signal btnc_d:std_logic;
     signal data:std_logic_vector(15 downto 0):=X"0000";
     signal cnt:std_logic_vector(3 downto 0):=X"0";
+    signal a: std_logic_vector(31 downto 0):= x"3FC00000"; -- 1.5 
+    signal b: std_logic_vector(31 downto 0):= x"C0000000"; -- -2.0
 
 begin
 
@@ -37,11 +39,18 @@ begin
         clk=>clk,
         en=>btnc_d
     );
+    
+   fpu_mul: entity WORK.FPU_multiplier port map(
+        a=>a,
+        b=>b,
+        y=>data
+   );
+   
     display:entity WORK.SSD port map(
         clk=>clk,
         cat=>cat,
         an=>an,
-        data=>cnt&cnt&cnt&cnt
+        data=>data
     );
 
 end Behavioral;

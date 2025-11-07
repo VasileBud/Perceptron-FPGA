@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 11/07/2025 01:59:16 PM
+-- Create Date: 11/07/2025 04:02:15 PM
 -- Design Name: 
--- Module Name: FPU_multiplier - Behavioral
+-- Module Name: FPU_scazator - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,24 +31,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity FPU_multiplier is
-    Port (
-        a, b : in  std_logic_vector(31 downto 0);
-        y    : out std_logic_vector(31 downto 0)
-     );
-end FPU_multiplier;
+entity FPU_scazator is
+  Port (
+        a:in std_logic,
+        b: out std_logic   );
+end FPU_scazator;
 
-architecture Behavioral of FPU_multiplier is
+architecture Behavioral of FPU_scazator is
 
 begin
-    
-    process(a,b)
-    begin
-        if a = X"00000000" and b = X"00000000" then
-            y <= X"00000000";
-        elsif a = X"00000000" or b = X"00000000" then 
-            y <= X"00000000";   
-        end if;    
-    end process;
+
 
 end Behavioral;
