@@ -32,23 +32,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity FPU_multiplier is
-    Port (
-        a, b : in  std_logic_vector(31 downto 0);
-        y    : out std_logic_vector(31 downto 0)
-     );
+--  Port ( );
 end FPU_multiplier;
 
 architecture Behavioral of FPU_multiplier is
 
 begin
-    
-    process(a,b)
-    begin
-        if a = X"00000000" and b = X"00000000" then
-            y <= X"00000000";
-        elsif a = X"00000000" or b = X"00000000" then 
-            y <= X"00000000";   
-        end if;    
-    end process;
+
 
 end Behavioral;
