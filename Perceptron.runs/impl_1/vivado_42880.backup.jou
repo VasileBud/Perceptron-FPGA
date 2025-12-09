@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Nov 26 17:12:47 2025
+# Process ID: 42880
+# Current directory: D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1
+# Command line: vivado.exe -log Main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Main.tcl -notrace
+# Log file: D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.vdi
+# Journal file: D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1\vivado.jou
+# Running On        :DESKTOP-TGQSMCG
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :AMD Ryzen 5 5500U with Radeon Graphics         
+# CPU Frequency     :2096 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :14870 MB
+# Swap memory       :6979 MB
+# Total Virtual     :21849 MB
+# Available Virtual :4653 MB
+#-----------------------------------------------------------
+source Main.tcl -notrace
