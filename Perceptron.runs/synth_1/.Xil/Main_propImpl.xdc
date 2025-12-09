@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc rfile:../../../Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc rfile:../../../Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

@@ -3,28 +3,28 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec  9 10:01:07 2025
-# Process ID: 8716
-# Current directory: D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/synth_1
+# Start of session at: Tue Dec  9 16:49:35 2025
+# Process ID: 45912
+# Current directory: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1
 # Command line: vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
-# Log file: D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/synth_1/Main.vds
-# Journal file: D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/synth_1\vivado.jou
-# Running On        :Vasile-Laptop
+# Log file: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1/Main.vds
+# Journal file: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-TGQSMCG
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :26200
-# Processor Detail  :AMD Ryzen 7 5800HS with Radeon Graphics        
-# CPU Frequency     :3194 MHz
-# CPU Physical cores:8
-# CPU Logical cores :16
-# Host memory       :16539 MB
-# Swap memory       :5368 MB
-# Total Virtual     :21908 MB
-# Available Virtual :12128 MB
+# Processor Detail  :AMD Ryzen 5 5500U with Radeon Graphics         
+# CPU Frequency     :2096 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :14870 MB
+# Swap memory       :8589 MB
+# Total Virtual     :23460 MB
+# Available Virtual :6635 MB
 #-----------------------------------------------------------
 source Main.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 530.887 ; gain = 201.703
-Command: read_checkpoint -auto_incremental -incremental D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/utils_1/imports/synth_1/Main.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/utils_1/imports/synth_1/Main.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 514.922 ; gain = 200.957
+Command: read_checkpoint -auto_incremental -incremental D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/utils_1/imports/synth_1/Main.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/utils_1/imports/synth_1/Main.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top Main -part xc7a35tcpg236-1
 Starting synth_design
@@ -36,26 +36,27 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8692
+INFO: [Synth 8-7075] Helper process launched with PID 28240
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1382.684 ; gain = 447.516
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1368.199 ; gain = 448.297
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Main' [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/imports/materiale/Main.vhd:21]
-INFO: [Synth 8-638] synthesizing module 'MPG' [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/imports/materiale/MPG.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/imports/materiale/MPG.vhd:16]
-INFO: [Synth 8-638] synthesizing module 'Perceptron' [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/Perceptron.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'FPU_multiplier' [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'FPU_multiplier' (0#1) [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:19]
-INFO: [Synth 8-638] synthesizing module 'FPU_adder' [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_adder.vhd:16]
-INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_adder.vhd:65]
-INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_adder.vhd:66]
-INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_adder.vhd:79]
-INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_adder.vhd:80]
-INFO: [Synth 8-256] done synthesizing module 'FPU_adder' (0#1) [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_adder.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'Perceptron' (0#1) [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/Perceptron.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'SSD' [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/imports/materiale/SSD_4.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'SSD' (0#1) [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/imports/materiale/SSD_4.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'Main' (0#1) [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/imports/materiale/Main.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'Main' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/Main.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'MPG' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/MPG.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/MPG.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'Perceptron' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/Perceptron.vhd:23]
+WARNING: [Synth 8-614] signal 'start' is read in the process but is not in the sensitivity list [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/Perceptron.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'FPU_multiplier' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'FPU_multiplier' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'FPU_adder' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:16]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:65]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:66]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:79]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'FPU_adder' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Perceptron' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/Perceptron.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'SSD' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/SSD_4.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/SSD_4.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Main' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/Main.vhd:21]
 WARNING: [Synth 8-7129] Port led[14] in module Main is either unconnected or has no load
 WARNING: [Synth 8-7129] Port led[12] in module Main is either unconnected or has no load
 WARNING: [Synth 8-7129] Port led[11] in module Main is either unconnected or has no load
@@ -81,52 +82,52 @@ WARNING: [Synth 8-7129] Port sw[3] in module Main is either unconnected or has n
 WARNING: [Synth 8-7129] Port sw[2] in module Main is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[1] in module Main is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1500.305 ; gain = 565.137
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1485.934 ; gain = 566.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1500.305 ; gain = 565.137
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1485.934 ; gain = 566.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1500.305 ; gain = 565.137
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1485.934 ; gain = 566.031
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1500.305 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1485.934 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc]
-Finished Parsing XDC File [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
+Parsing XDC File [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc]
+Finished Parsing XDC File [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1601.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1590.469 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1601.074 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1590.469 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'M_norm_reg' and it is trimmed from '48' to '47' bits. [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:118]
+WARNING: [Synth 8-3936] Found unconnected internal register 'M_norm_reg' and it is trimmed from '48' to '47' bits. [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:118]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FPU_adder'
 INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'Perceptron'
 ---------------------------------------------------------------------------------------------------
@@ -152,7 +153,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'one-hot' in module 'Perceptron'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -215,10 +216,10 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'perceptron/fpu_mul1/M_full_reg' and it is trimmed from '48' to '31' bits. [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:113]
-WARNING: [Synth 8-3936] Found unconnected internal register 'perceptron/fpu_mul1/M_full_reg' and it is trimmed from '48' to '17' bits. [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:113]
-WARNING: [Synth 8-3936] Found unconnected internal register 'perceptron/fpu_mul2/M_full_reg' and it is trimmed from '48' to '31' bits. [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:113]
-WARNING: [Synth 8-3936] Found unconnected internal register 'perceptron/fpu_mul2/M_full_reg' and it is trimmed from '48' to '17' bits. [D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:113]
+WARNING: [Synth 8-3936] Found unconnected internal register 'perceptron/fpu_mul1/M_full_reg' and it is trimmed from '48' to '31' bits. [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:113]
+WARNING: [Synth 8-3936] Found unconnected internal register 'perceptron/fpu_mul1/M_full_reg' and it is trimmed from '48' to '17' bits. [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:113]
+WARNING: [Synth 8-3936] Found unconnected internal register 'perceptron/fpu_mul2/M_full_reg' and it is trimmed from '48' to '31' bits. [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:113]
+WARNING: [Synth 8-3936] Found unconnected internal register 'perceptron/fpu_mul2/M_full_reg' and it is trimmed from '48' to '17' bits. [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:113]
 DSP Report: Generating DSP perceptron/fpu_mul1/multOp, operation Mode is: A2*(B:0x0)'.
 DSP Report: register perceptron/fpu_mul1/multOp is absorbed into DSP perceptron/fpu_mul1/multOp.
 DSP Report: register perceptron/fpu_mul1/multOp is absorbed into DSP perceptron/fpu_mul1/multOp.
@@ -268,7 +269,7 @@ WARNING: [Synth 8-7129] Port sw[3] in module Main is either unconnected or has n
 WARNING: [Synth 8-7129] Port sw[2] in module Main is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[1] in module Main is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
  Sort Area is  perceptron/fpu_mul1/multOp_0 : 0 0 : 3489 4867 : Used 1 time 0
  Sort Area is  perceptron/fpu_mul1/multOp_0 : 0 1 : 1378 4867 : Used 1 time 0
@@ -296,19 +297,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -326,37 +327,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -388,40 +389,40 @@ Report Cell Usage:
 |3     |DSP48E1 |     4|
 |5     |LUT1    |     5|
 |6     |LUT2    |   180|
-|7     |LUT3    |   279|
+|7     |LUT3    |   280|
 |8     |LUT4    |   189|
 |9     |LUT5    |   339|
-|10    |LUT6    |   542|
+|10    |LUT6    |   541|
 |11    |MUXF7   |    10|
 |12    |FDCE    |   115|
 |13    |FDPE    |     1|
-|14    |FDRE    |   499|
+|14    |FDRE    |   496|
 |15    |IBUF    |     5|
 |16    |OBUF    |    20|
 |17    |OBUFT   |     7|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1590.469 ; gain = 670.566
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1601.074 ; gain = 565.137
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1601.074 ; gain = 665.906
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 1590.469 ; gain = 566.031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1590.469 ; gain = 670.566
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1601.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1590.469 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1601.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1590.469 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: a9c1ec9f
+Synth Design complete | Checksum: a00dec4
 INFO: [Common 17-83] Releasing license: Synthesis
-42 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+42 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1601.074 ; gain = 1065.684
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1601.074 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/synth_1/Main.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1590.469 ; gain = 1070.352
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1590.469 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1/Main.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Dec  9 10:01:56 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  9 16:50:38 2025...

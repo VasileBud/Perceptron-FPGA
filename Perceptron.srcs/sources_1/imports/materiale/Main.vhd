@@ -97,7 +97,7 @@ begin
     perceptron: entity WORK.Perceptron port map(
         clk=>clk,
         rst => btnc_d,
-        start => btnu_d,
+        start => btnu,
         x_coord =>x1,
         y_coord =>y1,
         w=>x"3f800000",

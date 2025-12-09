@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.tcl"
+  variable script "D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/Main.tcl"
   variable category "vivado_impl"
 }
 
@@ -97,6 +97,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -104,24 +106,26 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 4
+  set_param chipscope.maxJobs 3
+  set_param checkpoint.writeSynthRtdsInDcp 1
+  set_param synth.incrementalSynthesisCache D:/faculta_an3/ssc/A_PERCEPTRON/.Xil/Vivado-45816-DESKTOP-TGQSMCG/incrSyn
   set_param xicom.use_bs_reader 1
-  set_param runs.launchOptions { -jobs 8  }
+  set_param runs.launchOptions { -jobs 6  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.cache/wt [current_project]
-  set_property parent.project_path D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.xpr [current_project]
-  set_property ip_output_repo D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.cache/wt [current_project]
+  set_property parent.project_path D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.xpr [current_project]
+  set_property ip_output_repo D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/synth_1/Main.dcp
+  add_files -quiet D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1/Main.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc
+  read_xdc D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec  9 16:30:42 2025
-# Process ID: 45816
+# Start of session at: Tue Dec  9 16:23:10 2025
+# Process ID: 58216
 # Current directory: D:/faculta_an3/ssc/A_PERCEPTRON
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent60868 D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent56588 D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.xpr
 # Log file: D:/faculta_an3/ssc/A_PERCEPTRON/vivado.log
 # Journal file: D:/faculta_an3/ssc/A_PERCEPTRON\vivado.jou
 # Running On        :DESKTOP-TGQSMCG
@@ -19,10 +19,12 @@
 # Host memory       :14870 MB
 # Swap memory       :8589 MB
 # Total Virtual     :23460 MB
-# Available Virtual :7738 MB
+# Available Virtual :7794 MB
 #-----------------------------------------------------------
 start_gui
 open_project D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.xpr
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at D:/faculta_an3/ssc/github_repo/StructuraSistemelorDeCalcul/Lab9/Hardware/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at D:/faculta_an3/ssc/github_repo/StructuraSistemelorDeCalcul/Lab9/Hardware/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/faculta_an3/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/faculta_an3/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/faculta_an3/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -91,211 +93,12 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/faculta_an3/Vivado/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:10 . Memory (MB): peak = 1541.777 ; gain = 305.402
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 1619.277 ; gain = 248.859
 update_compile_order -fileset sources_1
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
-Starting synth_design
-Using part: xc7a35tcpg236-1
-Top: Main
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
-INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 60488
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2382.125 ; gain = 434.766
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Main' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/Main.vhd:21]
-INFO: [Synth 8-638] synthesizing module 'MPG' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/MPG.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/MPG.vhd:16]
-INFO: [Synth 8-638] synthesizing module 'Perceptron' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/Perceptron.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'FPU_multiplier' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'FPU_multiplier' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd:19]
-INFO: [Synth 8-638] synthesizing module 'FPU_adder' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:16]
-INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:65]
-INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:66]
-INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:79]
-INFO: [Synth 8-6054] Found Dynamic range expression with variable size [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:80]
-INFO: [Synth 8-256] done synthesizing module 'FPU_adder' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'Perceptron' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/Perceptron.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'SSD' [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/SSD_4.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'SSD' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/SSD_4.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'Main' (0#1) [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/Main.vhd:21]
-WARNING: [Synth 8-7129] Port led[14] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[12] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[11] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[10] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[9] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[8] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[7] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port btnd in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port btnl in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port btnr in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[14] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[13] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[12] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[11] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[10] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[9] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[8] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[7] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[6] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[5] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[4] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[3] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[2] in module Main is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[1] in module Main is either unconnected or has no load
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2499.809 ; gain = 552.449
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2499.809 ; gain = 552.449
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2499.809 ; gain = 552.449
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2499.809 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc]
-Finished Parsing XDC File [D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc]
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2597.508 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2621.574 ; gain = 674.215
-23 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 2621.574 ; gain = 1069.512
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/utils_1/imports/synth_1/Main.dcp with file D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1/Main.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Tue Dec  9 16:33:36 2025] Launched synth_1...
-Run output will be captured here: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1/runme.log
-[Tue Dec  9 16:33:36 2025] Launched impl_1...
-Run output will be captured here: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/runme.log
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2024.1.0
-  **** Build date : Mar  6 2024 at 20:50:54
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2024.1.0
-  ****** Build date   : Mar 09 2024-02:00:37
-    **** Build number : 2024.1.1709942437
-      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
-      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2652.633 ; gain = 28.711
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183736048A
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/utils_1/imports/synth_1/Main.dcp with file D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1/Main.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Tue Dec  9 16:38:58 2025] Launched synth_1...
-Run output will be captured here: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1/runme.log
-[Tue Dec  9 16:38:58 2025] Launched impl_1...
-Run output will be captured here: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\Perceptron.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\imports\materiale\Main.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\FPU_adder.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\Perceptron.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\Perceptron.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\Perceptron.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\imports\materiale\Main.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\FPU_adder.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\FPU_adder.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\FPU_adder.vhd:]
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/utils_1/imports/synth_1/Main.dcp with file D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1/Main.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Tue Dec  9 16:49:32 2025] Launched synth_1...
-Run output will be captured here: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1/runme.log
-[Tue Dec  9 16:49:32 2025] Launched impl_1...
-Run output will be captured here: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/runme.log
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\Perceptron.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\imports\materiale\Main.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\FPU_adder.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\Perceptron.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\Perceptron.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\Perceptron.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\imports\materiale\Main.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\FPU_adder.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\FPU_adder.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.srcs\sources_1\new\FPU_adder.vhd:]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183736048A
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Common 17-180] Spawn failed: No error
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  9 16:30:40 2025...

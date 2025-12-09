@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Tue Dec  9 10:02:28 2025
-| Host         : Vasile-Laptop
+| Date         : Tue Dec  9 16:51:16 2025
+| Host         : DESKTOP-TGQSMCG
 | Design       : design_1
 | Device       : xc7a35t-cpg236-1--
 -------------------------------------

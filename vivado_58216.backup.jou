@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec  9 16:49:35 2025
-# Process ID: 45912
-# Current directory: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1
-# Command line: vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
-# Log file: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1/Main.vds
-# Journal file: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1\vivado.jou
+# Start of session at: Tue Dec  9 16:23:10 2025
+# Process ID: 58216
+# Current directory: D:/faculta_an3/ssc/A_PERCEPTRON
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent56588 D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.xpr
+# Log file: D:/faculta_an3/ssc/A_PERCEPTRON/vivado.log
+# Journal file: D:/faculta_an3/ssc/A_PERCEPTRON\vivado.jou
 # Running On        :DESKTOP-TGQSMCG
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :26200
@@ -19,6 +19,8 @@
 # Host memory       :14870 MB
 # Swap memory       :8589 MB
 # Total Virtual     :23460 MB
-# Available Virtual :6635 MB
+# Available Virtual :7794 MB
 #-----------------------------------------------------------
-source Main.tcl -notrace
+start_gui
+open_project D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.xpr
+update_compile_order -fileset sources_1

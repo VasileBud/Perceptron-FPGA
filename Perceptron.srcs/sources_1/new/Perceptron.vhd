@@ -115,7 +115,7 @@ begin
 
         case cur_state is
             when IDLE =>
-                done <= '1';
+                done <= '0';
 
             when MUL =>
                 start_mul1 <= '1';
@@ -129,6 +129,9 @@ begin
 
             when DONE_ST =>
                 done <= '1';
+                if start = '0' then
+                    done <= '0';
+                end if;
         end case;
     end process;
 

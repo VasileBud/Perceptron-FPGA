@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Dec  9 10:02:31 2025
-| Host         : Vasile-Laptop running 64-bit major release  (build 9200)
+| Date         : Tue Dec  9 16:51:21 2025
+| Host         : DESKTOP-TGQSMCG running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Main_control_sets_placed.rpt
 | Design       : Main
 | Device       : xc7a35t
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    29 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    97 |
+| Unused register locations in slices containing registers |   100 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              52 |           22 |
-| No           | No                    | Yes                    |              45 |           15 |
+| No           | No                    | No                     |              50 |           18 |
+| No           | No                    | Yes                    |              45 |           17 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             436 |          183 |
-| Yes          | No                    | Yes                    |              71 |           16 |
-| Yes          | Yes                   | No                     |              11 |           10 |
+| Yes          | No                    | No                     |             435 |          181 |
+| Yes          | No                    | Yes                    |              71 |           21 |
+| Yes          | Yes                   | No                     |              11 |           11 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,35 +73,35 @@ Table of Contents
 +----------------+-------------------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
 |  Clock Signal  |                  Enable Signal                  |                 Set/Reset Signal                | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+-------------------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | mpg1/eqOp                                       |                                                 |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG | perceptron/fpu_mul1/A_exp0                      |                                                 |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | mpg1/eqOp                                       |                                                 |                2 |              2 |         1.00 |
-|  clk_IBUF_BUFG | perceptron/fpu_mul1/state[3]_i_1_n_0            | mpg1/btnc_d                                     |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | perceptron/fpu_mul2/state[3]_i_1__0_n_0         | mpg1/btnc_d                                     |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | perceptron/fpu_adder1/A_exp0                    |                                                 |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | perceptron/fpu_mul2/state[3]_i_1__0_n_0         | mpg1/btnc_d                                     |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | perceptron/fpu_mul1/state[3]_i_1_n_0            | mpg1/btnc_d                                     |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | perceptron/fpu_adder1/A_exp0                    |                                                 |                3 |              8 |         2.67 |
 |  clk_IBUF_BUFG | perceptron/fpu_adder1/sum_exp0                  |                                                 |                3 |              8 |         2.67 |
 |  clk_IBUF_BUFG | perceptron/fpu_adder2/sum_exp0                  |                                                 |                2 |              8 |         4.00 |
 |  clk_IBUF_BUFG | perceptron/fpu_mul2/eZ0                         |                                                 |                3 |              9 |         3.00 |
 |  clk_IBUF_BUFG | perceptron/fpu_mul1/eZ0                         |                                                 |                3 |              9 |         3.00 |
-|  clk_IBUF_BUFG | perceptron/fpu_adder1/A_mantissa[24]_i_2_n_0    | perceptron/fpu_adder1/A_mantissa[24]_i_1__0_n_0 |               10 |             11 |         1.10 |
+|  clk_IBUF_BUFG | perceptron/fpu_adder1/A_mantissa[24]_i_2_n_0    | perceptron/fpu_adder1/A_mantissa[24]_i_1__0_n_0 |               11 |             11 |         1.00 |
 |  clk_IBUF_BUFG | perceptron/fpu_adder1/A_mantissa[24]_i_2_n_0    |                                                 |               13 |             13 |         1.00 |
-|  clk_IBUF_BUFG | perceptron/fpu_adder2/A_exp0                    |                                                 |                8 |             17 |         2.12 |
+|  clk_IBUF_BUFG | perceptron/fpu_adder2/A_exp0                    |                                                 |                5 |             17 |         3.40 |
 |  clk_IBUF_BUFG | perceptron/fpu_mul2/M_full0                     |                                                 |                4 |             17 |         4.25 |
-|  clk_IBUF_BUFG | perceptron/fpu_mul1/M_full0                     |                                                 |                7 |             17 |         2.43 |
+|  clk_IBUF_BUFG | perceptron/fpu_mul1/M_full0                     |                                                 |                3 |             17 |         5.67 |
 |  clk_IBUF_BUFG | perceptron/fpu_mul2/mant0                       |                                                 |                4 |             23 |         5.75 |
-|  clk_IBUF_BUFG | perceptron/fpu_mul1/mant0                       |                                                 |                6 |             23 |         3.83 |
-|  clk_IBUF_BUFG | perceptron/fpu_adder1/B_mantissa[24]_i_1_n_0    |                                                 |               15 |             24 |         1.60 |
-|  clk_IBUF_BUFG | perceptron/fpu_adder2/A_mantissa[24]_i_1_n_0    |                                                 |               21 |             24 |         1.14 |
+|  clk_IBUF_BUFG | perceptron/fpu_mul1/mant0                       |                                                 |                5 |             23 |         4.60 |
+|  clk_IBUF_BUFG | perceptron/fpu_adder1/B_mantissa[24]_i_1_n_0    |                                                 |               17 |             24 |         1.41 |
+|  clk_IBUF_BUFG | perceptron/fpu_adder2/A_mantissa[24]_i_1_n_0    |                                                 |               22 |             24 |         1.09 |
 |  clk_IBUF_BUFG | perceptron/fpu_adder2/B_mantissa[24]_i_1__0_n_0 |                                                 |               21 |             24 |         1.14 |
-|  clk_IBUF_BUFG | perceptron/fpu_adder1/sum_mantissa0             |                                                 |               15 |             25 |         1.67 |
+|  clk_IBUF_BUFG | perceptron/fpu_adder1/sum_mantissa0             |                                                 |               14 |             25 |         1.79 |
 |  clk_IBUF_BUFG | perceptron/fpu_adder2/sum_mantissa0             |                                                 |               14 |             25 |         1.79 |
-|  clk_IBUF_BUFG | perceptron/fpu_mul1/product[30]_i_1_n_0         | mpg1/btnc_d                                     |                5 |             31 |         6.20 |
-|  clk_IBUF_BUFG | perceptron/fpu_adder1/done0                     |                                                 |               13 |             32 |         2.46 |
-|  clk_IBUF_BUFG | perceptron/fpu_mul2/product[31]_i_1_n_0         | mpg1/btnc_d                                     |                9 |             32 |         3.56 |
-|  clk_IBUF_BUFG | perceptron/fpu_adder2/sum0                      |                                                 |               10 |             33 |         3.30 |
-|  clk_IBUF_BUFG |                                                 | mpg1/btnc_d                                     |               15 |             45 |         3.00 |
-|  clk_IBUF_BUFG | perceptron/fpu_mul2/M_norm0                     |                                                 |                8 |             47 |         5.88 |
+|  clk_IBUF_BUFG | perceptron/fpu_mul1/product[30]_i_1_n_0         | mpg1/btnc_d                                     |                7 |             31 |         4.43 |
+|  clk_IBUF_BUFG | perceptron/fpu_mul2/product[31]_i_1_n_0         | mpg1/btnc_d                                     |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | perceptron/fpu_adder1/done0                     |                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | perceptron/fpu_adder2/sum0                      |                                                 |                8 |             33 |         4.12 |
+|  clk_IBUF_BUFG |                                                 | mpg1/btnc_d                                     |               17 |             45 |         2.65 |
+|  clk_IBUF_BUFG | perceptron/fpu_mul2/M_norm0                     |                                                 |               11 |             47 |         4.27 |
 |  clk_IBUF_BUFG | perceptron/fpu_mul1/M_norm0                     |                                                 |                8 |             47 |         5.88 |
-|  clk_IBUF_BUFG |                                                 |                                                 |               22 |             52 |         2.36 |
+|  clk_IBUF_BUFG |                                                 |                                                 |               18 |             50 |         2.78 |
 +----------------+-------------------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
 
 

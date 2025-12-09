@@ -3,131 +3,60 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Nov 26 16:08:46 2025
-# Process ID: 38840
-# Current directory: D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent46128 D:\faculta_an3\ssc\Perceptron-FPGA_delta_perceptron\Perceptron-FPGA\Perceptron.xpr
-# Log file: D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/vivado.log
-# Journal file: D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA\vivado.jou
+# Start of session at: Tue Dec  9 16:30:42 2025
+# Process ID: 45816
+# Current directory: D:/faculta_an3/ssc/A_PERCEPTRON
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent60868 D:\faculta_an3\ssc\A_PERCEPTRON\Perceptron.xpr
+# Log file: D:/faculta_an3/ssc/A_PERCEPTRON/vivado.log
+# Journal file: D:/faculta_an3/ssc/A_PERCEPTRON\vivado.jou
 # Running On        :DESKTOP-TGQSMCG
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :26100
+# Operating System  :26200
 # Processor Detail  :AMD Ryzen 5 5500U with Radeon Graphics         
 # CPU Frequency     :2096 MHz
 # CPU Physical cores:6
 # CPU Logical cores :12
 # Host memory       :14870 MB
-# Swap memory       :6979 MB
-# Total Virtual     :21849 MB
-# Available Virtual :8621 MB
+# Swap memory       :8589 MB
+# Total Virtual     :23460 MB
+# Available Virtual :7738 MB
 #-----------------------------------------------------------
 start_gui
-open_project D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.xpr
+open_project D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.xpr
 update_compile_order -fileset sources_1
 synth_design -rtl -rtl_skip_mlo -name rtl_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
-refresh_design
-open_run synth_1 -name synth_1
 open_hw_manager
 connect_hw_server -allow_non_jtag
 open_hw_target
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-reset_run impl_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/faculta_an3/ssc/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
-reset_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
