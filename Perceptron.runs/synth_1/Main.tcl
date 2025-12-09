@@ -80,7 +80,7 @@ read_vhdl -library xil_defaultlib {
   D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_adder.vhd
   D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/FPU_multiplier.vhd
   D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/MPG.vhd
-  D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/Perceptron.vhd
+  D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/new/delta_rule_unit.vhd
   D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/SSD_4.vhd
   D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.srcs/sources_1/imports/materiale/Main.vhd
 }

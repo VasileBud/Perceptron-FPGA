@@ -13,10 +13,9 @@ entity Perceptron is
         w        : in  std_logic_vector(31 downto 0);
         wx       : in  std_logic_vector(31 downto 0);
         wy       : in  std_logic_vector(31 downto 0);
-        fsum     : out std_logic_vector(31 downto 0);
+--        fsum     : out std_logic_vector(31 downto 0);
         output   : out std_logic;
         done     : out std_logic;
-        leds     : out std_logic_vector(6 downto 0)
         );
 end Perceptron;
 
@@ -41,17 +40,17 @@ architecture Behavioral of Perceptron is
     signal start_adder2 : std_logic := '0';
 
 begin
-    process(cur_state)
-    begin
-        leds <= (others => '0');
-        case cur_state is
-            when IDLE     => leds(4) <= '1';
-            when MUL      => leds(3) <= '1';
-            when ADD1     => leds(2) <= '1';
-            when ADD2     => leds(1) <= '1';
-            when DONE_ST  => leds(0) <= '1';
-        end case;
-    end process;
+--    process(cur_state)
+--    begin
+--        leds <= (others => '0');
+--        case cur_state is
+--            when IDLE     => leds(4) <= '1';
+--            when MUL      => leds(3) <= '1';
+--            when ADD1     => leds(2) <= '1';
+--            when ADD2     => leds(1) <= '1';
+--            when DONE_ST  => leds(0) <= '1';
+--        end case;
+--    end process;
 
     process(clk, rst)
     begin

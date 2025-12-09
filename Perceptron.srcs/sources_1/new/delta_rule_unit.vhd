@@ -14,8 +14,8 @@ Port (
     signal perceived_point_type:in std_logic;
     signal corrected_weight:out std_logic_vector(31 downto 0);
     signal delta_ok:out std_logic;
-    signal delta_done:out std_logic;
-    signal leds:out std_logic_vector(6 downto 0)
+    signal delta_done:out std_logic
+--    signal leds:out std_logic_vector(6 downto 0)
 );
 end delta_rule_unit;
 
@@ -33,8 +33,8 @@ architecture Behavioral of delta_rule_unit is
     signal start_mul: std_logic:='0';
     signal start_adder: std_logic:='0';
     ------DEBUGGUNG--------
-    signal int1:std_logic:='0';
-    signal int2:std_logic:='0';
+--    signal int1:std_logic:='0';
+--    signal int2:std_logic:='0';
     
     signal weight_adjustment_value: std_logic_vector(31 downto 0):=X"00000000";
     type ST is (
@@ -128,24 +128,24 @@ begin
         end case;
     end process;
     ---------DEBUGGING
-    process (cur_state,start,adder_done,mul_done)
-    begin
+--    process (cur_state,start,adder_done,mul_done)
+--    begin
 --        if rising_edge(adder_done) then
-         leds<=(others=>'0');
+--         leds<=(others=>'0');
 --            leds(5)<='1';
 --        end if;
         
 --        if rising_edge(mul_done) then
 --            leds(6)<='1';
 --        end if;
-        case cur_state is
-            when IDLE =>leds(4)<='1';
-            when RST_ST =>leds(3)<='1';
-            when STRT =>leds(2)<='1';
-            when COMPUTING =>leds(1)<='1';
-            when SIGNAL_STOP=>leds(0)<='1';
-        end case;
-    end process;
+--        case cur_state is
+--            when IDLE =>leds(4)<='1';
+--            when RST_ST =>leds(3)<='1';
+--            when STRT =>leds(2)<='1';
+--            when COMPUTING =>leds(1)<='1';
+--            when SIGNAL_STOP=>leds(0)<='1';
+--        end case;
+--    end process;
     
     --CAREFUL multiplier cannot be started at will, but needs to be resetted
     fpu_mul: entity WORK.FPU_multiplier port map(

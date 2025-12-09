@@ -13,3 +13,13 @@
     <Process Command="vivado.bat" Owner="timit" Host="DESKTOP-TGQSMCG" Pid="28496" HostCore="12" HostMemory="014870372352">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="timit" Host="DESKTOP-TGQSMCG" Pid="64656" HostCore="12" HostMemory="014870372352">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="timit" Host="DESKTOP-TGQSMCG" Pid="65984" HostCore="12" HostMemory="014870372352">
+    </Process>
+</ProcessHandle>

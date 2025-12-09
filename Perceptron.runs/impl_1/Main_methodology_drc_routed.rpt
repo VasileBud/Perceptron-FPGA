@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Dec  9 16:51:45 2025
+| Date         : Tue Dec  9 17:18:01 2025
 | Host         : DESKTOP-TGQSMCG running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Main_methodology_drc_routed.rpt -pb Main_methodology_drc_routed.pb -rpx Main_methodology_drc_routed.rpx
 | Design       : Main
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 46
+             Violations found: 47
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 2          |
 | TIMING-18 | Warning  | Missing input or output delay | 45         |
 +-----------+----------+-------------------------------+------------+
 
@@ -35,19 +35,33 @@ Table of Contents
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell mpg1/FSM_sequential_state[2]_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) perceptron/fsum_reg[25]/CLR, perceptron/fsum_reg[26]/CLR,
-perceptron/fsum_reg[27]/CLR, perceptron/fsum_reg[28]/CLR,
-perceptron/fsum_reg[29]/CLR, perceptron/fsum_reg[2]/CLR,
-perceptron/fsum_reg[30]/CLR, perceptron/fsum_reg[31]/CLR,
-perceptron/fsum_reg[3]/CLR, perceptron/fsum_reg[4]/CLR,
-perceptron/fsum_reg[5]/CLR, perceptron/fsum_reg[6]/CLR,
-perceptron/fsum_reg[7]/CLR, perceptron/fsum_reg[8]/CLR,
-perceptron/fsum_reg[9]/CLR (the first 15 of 116 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell delta_rule_unit/fpu_adder2/FSM_sequential_state[2]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) delta_rule_unit/fpu_adder2/FSM_sequential_state_reg[0]/CLR,
+delta_rule_unit/fpu_adder2/FSM_sequential_state_reg[1]/CLR
+delta_rule_unit/fpu_adder2/FSM_sequential_state_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell delta_rule_unit/fpu_mul/state[3]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) delta_rule_unit/fpu_mul/product_reg[29]/CLR,
+delta_rule_unit/fpu_mul/product_reg[2]/CLR,
+delta_rule_unit/fpu_mul/product_reg[30]/CLR,
+delta_rule_unit/fpu_mul/product_reg[31]/CLR,
+delta_rule_unit/fpu_mul/product_reg[3]/CLR,
+delta_rule_unit/fpu_mul/product_reg[4]/CLR,
+delta_rule_unit/fpu_mul/product_reg[5]/CLR,
+delta_rule_unit/fpu_mul/product_reg[6]/CLR,
+delta_rule_unit/fpu_mul/product_reg[7]/CLR,
+delta_rule_unit/fpu_mul/product_reg[8]/CLR,
+delta_rule_unit/fpu_mul/product_reg[9]/CLR,
+delta_rule_unit/fpu_mul/state_reg[0]/CLR,
+delta_rule_unit/fpu_mul/state_reg[1]/CLR,
+delta_rule_unit/fpu_mul/state_reg[2]/CLR,
+delta_rule_unit/fpu_mul/state_reg[3]/CLR (the first 15 of 37 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on btnc relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on btnd relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#2 Warning

@@ -34,41 +34,6 @@ architecture Behavioral of Main is
     
 begin
 
-
---    btns<=btnu&btnc&btnd&btnl&btnr;
---    process(btns)
---    begin
---        if rising_edge(clk) then
---            if btns(4)='1'then
---                x(15 downto 0)<=sw;
---            end if;
---            if btns(3)='1'then
---                x(31 downto 16)<=sw;
---            end if;
---            if btns(2)='1'then
---                y(15 downto 0)<=sw;
---            end if;
---            if btns(1)='1'then
---                y(31 downto 16)<=sw;
---            end if;
---            if btns(0)='1'then
---                y<=x"3fa00000";
---                x<=x"c0200000";
---            end if;
-            
---        end if;
---    end process;
-
---    fpu_adder: entity WORK.FPU_adder port map(
---        clk => clk,
---        reset => btnc,
---        A=>x,
---        B=>y,
---        start=>'1',
---        done=>led(14),
---        sum=>sum
---    );
-
     mpg1: entity WORK.MPG port map(
         clk=>clk,
         btn=>btnc,
@@ -81,50 +46,41 @@ begin
         en=>btnu_d
     );
     
---    fpu_mul: entity WORK.FPU_multiplier port map(
---        clk => clk,
---        reset => btnu,
---        start => btn_d,
---        A=>x,
---        B=>y,
---        done=>led(15),
---        product=>res
---    );
     
     x1 <= x"41b80000" when sw(0) = '1' else x"41600000";
     y1 <= x"40a00000" when sw(0) = '1' else x"41a80000";
     
-    perceptron: entity WORK.Perceptron port map(
-        clk=>clk,
-        rst => btnc_d,
-        start => btnu,
-        x_coord =>x1,
-        y_coord =>y1,
-        w=>x"3f800000",
-        wx=>x"3f800000",
-        wy=>x"bf800000",
-        fsum=>res,
-        output=>led(13),
-        done =>led(15),
-        leds=>led(6 downto 0)
-    );
+--    perceptron: entity WORK.Perceptron port map(
+--        clk=>clk,
+--        rst => btnc_d,
+--        start => btnu,
+--        x_coord =>x1,
+--        y_coord =>y1,
+--        w=>x"3f800000",
+--        wx=>x"3f800000",
+--        wy=>x"bf800000",
+--        fsum=>res,
+--        output=>led(13),
+--        done =>led(15),
+--        leds=>led(6 downto 0)
+--    );
     
     data_16 <= res(31 downto 16) when sw(15)='0' else res(15 downto 0);
     --res <= product when sw(15)='0' else sum;
     
---    delta_rule_unit:entity WORK.delta_rule_unit port map(
---    clk=>clk,
---    start=>btnu_d,
---    rst=>btnd,
---    initial_weight=>X"3f800000",--1.0
---    input=>X"41d80000",--27.0
---    desired_point_type=>'0',--
---    perceived_point_type=>'1',--    perceived_point_type=>'1'
---    corrected_weight=>res,--
---    delta_ok=>led(14),
---    delta_done=>led(15),
---    leds=>led(6 downto 0)
---    );
+    delta_rule_unit:entity WORK.delta_rule_unit port map(
+    clk=>clk,
+    start=>btnu,
+    rst=>btnd,
+    initial_weight=>x1,--1.0
+    input=>y1,--27.0
+    desired_point_type=>'0',--
+    perceived_point_type=>'1',--    perceived_point_type=>'1'
+    corrected_weight=>res,--
+    delta_ok=>led(14),
+    delta_done=>led(15),
+    leds=>led(6 downto 0)
+    );
     
     display:entity WORK.SSD port map(
         clk=>clk,

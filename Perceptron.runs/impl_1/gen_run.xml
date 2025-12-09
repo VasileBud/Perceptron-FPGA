@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1765291772">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1765293357">
   <File Type="ROUTE-PWR" Name="Main_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Main.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="Main_power_summary_routed.pb"/>
@@ -106,7 +106,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Perceptron.vhd">
+    <File Path="$PSRCDIR/sources_1/new/delta_rule_unit.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -128,7 +128,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/delta_rule_unit.vhd">
+    <File Path="$PSRCDIR/sources_1/new/Perceptron.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
