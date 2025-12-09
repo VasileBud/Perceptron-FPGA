@@ -15,7 +15,7 @@ entity Perceptron is
         wy       : in  std_logic_vector(31 downto 0);
 --        fsum     : out std_logic_vector(31 downto 0);
         output   : out std_logic;
-        done     : out std_logic;
+        done     : out std_logic
         );
 end Perceptron;
 
@@ -56,10 +56,8 @@ begin
     begin
         if rst = '1' then
             cur_state <= IDLE;
-            fsum      <= (others => '0');
         elsif rising_edge(clk) then
             cur_state <= next_state;
-            fsum      <= weighted_sum;
         end if;
     end process;
 

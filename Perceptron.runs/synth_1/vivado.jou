@@ -3,22 +3,22 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec  9 17:16:01 2025
-# Process ID: 28704
-# Current directory: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1
-# Command line: vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
-# Log file: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1/Main.vds
-# Journal file: D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1\vivado.jou
-# Running On        :DESKTOP-TGQSMCG
+# Start of session at: Tue Dec  9 18:27:31 2025
+# Process ID: 14768
+# Current directory: D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/synth_1
+# Command line: vivado.exe -log Control.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Control.tcl
+# Log file: D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/synth_1/Control.vds
+# Journal file: D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/synth_1\vivado.jou
+# Running On        :Vasile-Laptop
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :26200
-# Processor Detail  :AMD Ryzen 5 5500U with Radeon Graphics         
-# CPU Frequency     :2096 MHz
-# CPU Physical cores:6
-# CPU Logical cores :12
-# Host memory       :14870 MB
-# Swap memory       :8589 MB
-# Total Virtual     :23460 MB
-# Available Virtual :5986 MB
+# Processor Detail  :AMD Ryzen 7 5800HS with Radeon Graphics        
+# CPU Frequency     :3194 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16539 MB
+# Swap memory       :5368 MB
+# Total Virtual     :21908 MB
+# Available Virtual :11842 MB
 #-----------------------------------------------------------
-source Main.tcl -notrace
+source Control.tcl -notrace

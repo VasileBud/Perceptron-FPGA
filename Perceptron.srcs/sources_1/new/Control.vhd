@@ -12,9 +12,10 @@ Port (
     rst: in  std_logic;
     start_per: in  std_logic;
     done_per: out  std_logic;
+    per_out: out  std_logic;
     
     start_delta: in  std_logic;
-    desiderd_point_type: in  std_logic;
+    desired_point_type: in  std_logic;
     corrected_w:out std_logic_vector(31 downto 0);
     corrected_w1:out std_logic_vector(31 downto 0);
     corrected_w2:out std_logic_vector(31 downto 0);
@@ -29,6 +30,7 @@ architecture Behavioral of Control is
     signal delta_ok2: std_logic;
     signal delta_ok3: std_logic;
 begin
+per_out <= perceived_point_type;
 perceptron: entity WORK.Perceptron port map(
         clk=>clk,
         rst => rst,
@@ -48,7 +50,7 @@ delta_rule_unit1:entity WORK.delta_rule_unit port map(
     rst=>rst,
     initial_weight=>w,
     input=>X"3f800000",-- 1f value
-    desired_point_type=>desiderd_point_type,
+    desired_point_type=>desired_point_type,
     perceived_point_type=>perceived_point_type,
     corrected_weight=>corrected_w,
     delta_ok=>delta_ok1,
@@ -61,7 +63,7 @@ delta_rule_unit2:entity WORK.delta_rule_unit port map(
     rst=>rst,
     initial_weight=>w1,
     input=>x_input,-- 1f value
-    desired_point_type=>desiderd_point_type,
+    desired_point_type=>desired_point_type,
     perceived_point_type=>perceived_point_type,
     corrected_weight=>corrected_w1,
     delta_ok=>delta_ok2,
@@ -74,7 +76,7 @@ delta_rule_unit3:entity WORK.delta_rule_unit port map(
     rst=>rst,
     initial_weight=>w2,
     input=>y_input,-- 1f value
-    desired_point_type=>desiderd_point_type,
+    desired_point_type=>desired_point_type,
     perceived_point_type=>perceived_point_type,
     corrected_weight=>corrected_w1,
     delta_ok=>delta_ok3,

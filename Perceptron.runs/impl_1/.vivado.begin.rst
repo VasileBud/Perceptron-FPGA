@@ -1,25 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="timit" Host="DESKTOP-TGQSMCG" Pid="64780" HostCore="12" HostMemory="014870372352">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="timit" Host="DESKTOP-TGQSMCG" Pid="46556" HostCore="12" HostMemory="014870372352">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="timit" Host="DESKTOP-TGQSMCG" Pid="28496" HostCore="12" HostMemory="014870372352">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="timit" Host="DESKTOP-TGQSMCG" Pid="64656" HostCore="12" HostMemory="014870372352">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="timit" Host="DESKTOP-TGQSMCG" Pid="65984" HostCore="12" HostMemory="014870372352">
+    <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="13976" HostCore="16" HostMemory="016539381760">
     </Process>
 </ProcessHandle>

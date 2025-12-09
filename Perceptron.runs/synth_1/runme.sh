@@ -12,9 +12,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/faculta_an3/Vivado/Vitis/2024.1/bin;D:/faculta_an3/Vivado/Vivado/2024.1/ids_lite/ISE/bin/nt64;D:/faculta_an3/Vivado/Vivado/2024.1/ids_lite/ISE/lib/nt64:D:/faculta_an3/Vivado/Vivado/2024.1/bin
+  PATH=D:/Xilinx/Vitis/2024.1/bin;D:/Xilinx/Vivado/2024.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2024.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2024.1/bin
 else
-  PATH=D:/faculta_an3/Vivado/Vitis/2024.1/bin;D:/faculta_an3/Vivado/Vivado/2024.1/ids_lite/ISE/bin/nt64;D:/faculta_an3/Vivado/Vivado/2024.1/ids_lite/ISE/lib/nt64:D:/faculta_an3/Vivado/Vivado/2024.1/bin:$PATH
+  PATH=D:/Xilinx/Vitis/2024.1/bin;D:/Xilinx/Vivado/2024.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2024.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2024.1/bin:$PATH
 fi
 export PATH
 
@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/faculta_an3/ssc/A_PERCEPTRON/Perceptron.runs/synth_1'
+HD_PWD='D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+EAStep vivado -log Control.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Control.tcl

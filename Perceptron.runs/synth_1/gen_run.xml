@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1765293357" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Main.dcp">
-  <File Type="PA-TCL" Name="Main.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Main_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="Main_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Main.vds"/>
-  <File Type="RDS-UTIL" Name="Main_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Main_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Main.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Main_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Main_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1765297647" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Main.dcp">
+  <File Type="PA-TCL" Name="Control.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Control_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Control_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Control.vds"/>
+  <File Type="RDS-UTIL" Name="Control_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Control_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Control.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Control_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Control_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/FPU_adder.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/FPU_multiplier.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/materiale/MPG.vhd">
+    <File Path="$PSRCDIR/sources_1/new/FPU_adder.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../an2_faculta/AC/materiale/MPG.vhd"/>
-        <Attr Name="ImportTime" Val="1741266835"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Perceptron.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -37,8 +35,24 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/Control.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/materiale/MPG.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../an2_faculta/AC/materiale/MPG.vhd"/>
+        <Attr Name="ImportTime" Val="1741266835"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/materiale/SSD_4.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../an2_faculta/AC/materiale/SSD_4.vhd"/>
         <Attr Name="ImportTime" Val="1740670754"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -47,22 +61,9 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/materiale/Main.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../an2_faculta/AC/materiale/Main.vhd"/>
         <Attr Name="ImportTime" Val="1742560416"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Perceptron.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/FPU.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -85,7 +86,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Control.vhd">
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -94,8 +103,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Main"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="Control"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -127,7 +135,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
