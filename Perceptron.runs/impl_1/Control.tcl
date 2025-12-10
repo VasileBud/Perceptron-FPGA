@@ -122,7 +122,6 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.runs/synth_1/Control.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/Facultate/AN3/Sem1/SSC/Proiect/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA_delta_perceptron/Perceptron-FPGA/Perceptron.srcs/constrs_1/imports/materiale/Basys3_ext_ssd.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

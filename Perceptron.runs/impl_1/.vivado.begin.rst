@@ -3,3 +3,53 @@
     <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="13976" HostCore="16" HostMemory="016539381760">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="15904" HostCore="16" HostMemory="016539381760">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="11256" HostCore="16" HostMemory="016539381760">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="7936" HostCore="16" HostMemory="016539381760">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="11068" HostCore="16" HostMemory="016539381760">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="15244" HostCore="16" HostMemory="016539381760">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="6524" HostCore="16" HostMemory="016539381760">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="15308" HostCore="16" HostMemory="016539381760">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="13808" HostCore="16" HostMemory="016539381760">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="17376" HostCore="16" HostMemory="016539381760">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="vasil" Host="VASILE-LAPTOP" Pid="10492" HostCore="16" HostMemory="016539381760">
+    </Process>
+</ProcessHandle>

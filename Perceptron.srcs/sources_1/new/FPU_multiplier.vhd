@@ -26,6 +26,7 @@ architecture Behavioral of FPU_multiplier is
   );
 
   signal state : ST := WAIT_STATE;
+  signal M_full_reg : std_logic_vector(47 downto 0);
 
   signal A_sgn, B_sgn, Product_sgn : std_logic;
   signal A_man, B_man : std_logic_vector(23 downto 0);
@@ -110,10 +111,11 @@ begin
         end if;
 
       when MUL_MANT_STATE =>
-        M_full <= A_man*B_man;
+        M_full_reg <= A_man*B_man;
         state <= NORM_MANT_STATE;
 
     when NORM_MANT_STATE =>
+        M_full<=M_full_reg;
       if M_full(47) = '0' then
           M_norm(47 downto 24) <= M_full(46 downto 23);
           M_norm(23 downto 0)  <= M_full(22 downto 0) & '0'; 
