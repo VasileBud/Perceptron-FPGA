@@ -29,6 +29,9 @@ architecture Behavioral of Control is
     signal delta_ok1: std_logic;
     signal delta_ok2: std_logic;
     signal delta_ok3: std_logic;
+    signal delta_done1: std_logic;
+    signal delta_done2: std_logic;
+    signal delta_done3: std_logic;
 begin
 per_out <= perceived_point_type;
 perceptron: entity WORK.Perceptron port map(
@@ -54,7 +57,7 @@ delta_rule_unit1:entity WORK.delta_rule_unit port map(
     perceived_point_type=>perceived_point_type,
     corrected_weight=>corrected_w,
     delta_ok=>delta_ok1,
-    delta_done=>delta_done
+    delta_done=>delta_done1
     );
     
 delta_rule_unit2:entity WORK.delta_rule_unit port map(
@@ -67,7 +70,7 @@ delta_rule_unit2:entity WORK.delta_rule_unit port map(
     perceived_point_type=>perceived_point_type,
     corrected_weight=>corrected_w1,
     delta_ok=>delta_ok2,
-    delta_done=>delta_done
+    delta_done=>delta_done2
     );  
 
 delta_rule_unit3:entity WORK.delta_rule_unit port map(
@@ -78,9 +81,9 @@ delta_rule_unit3:entity WORK.delta_rule_unit port map(
     input=>y_input,-- 1f value
     desired_point_type=>desired_point_type,
     perceived_point_type=>perceived_point_type,
-    corrected_weight=>corrected_w1,
+    corrected_weight=>corrected_w2,
     delta_ok=>delta_ok3,
-    delta_done=>delta_done
+    delta_done=>delta_done3
     );
     delta_ok<=delta_ok1 and delta_ok2 and delta_ok3;
 end Behavioral;
